@@ -36,7 +36,6 @@ group :test, :development do
   gem "rspec-rails"
   gem "capybara"
   gem "selenium-webdriver"
-  gem "better_errors"
   gem "simplecov"
 end
 

@@ -21,4 +21,4 @@ User:
 
 Tasks:
 - set up Capybara stuff
-
+- start with the Posts model
