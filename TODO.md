@@ -19,3 +19,6 @@ Posts:
 User:
 - attribute: email, password
 
+Tasks:
+- set up Capybara stuff
+
