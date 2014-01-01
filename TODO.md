@@ -22,3 +22,7 @@ User:
 Tasks:
 - set up Capybara stuff
 - start with the Posts model
+- work on cover art uploader
+- setup forms and all for basic posts
+- then worry about uploader --> Paperclip
+- 

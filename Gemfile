@@ -37,6 +37,7 @@ group :test, :development do
   gem "capybara"
   gem "selenium-webdriver"
   gem "simplecov"
+  gem "factory_girl_rails"
 end
 
 # Use ActiveModel has_secure_password

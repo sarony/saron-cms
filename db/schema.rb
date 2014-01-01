@@ -14,6 +14,11 @@
 ActiveRecord::Schema.define(version: 20140101095856) do
 
   create_table "posts", force: true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.string   "subtitle"
+    t.string   "preview"
+    t.string   "cover_art"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
