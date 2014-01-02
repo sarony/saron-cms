@@ -8,6 +8,7 @@
   <% elsif post.type == "Illustration" %>
     <%= post.image %>
   <% end %>
+  <%= link_to "Edit", edit_post_path(post) %>
 <% end %>
 
 <a href="posts/new?post_type=BlogPost">New Blog Post</a>
