@@ -17,6 +17,11 @@
 
     <%= f.hidden_field :type, value: "BlogPost" %>
 
+  <% elsif @post.type == "Illustration" %>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+
+    <%= f.hidden_field :type, value: "Illustration" %>
   <% end %>
 
   <%= f.submit %>

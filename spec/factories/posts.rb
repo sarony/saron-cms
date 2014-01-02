@@ -8,13 +8,13 @@ FactoryGirl.define do
     cover_art "halfway-cover.jpeg"
   end
 
-  # factory :illustration, class: Post do
-  #   title "Pies In The Sky"
-  #   subtitle "inspired by a Flatiron Feeling Friday"
-  #   cover_art "pies-in-the-sky-cover.jpeg"
-  #   image "pies-in-the-sky.jpeg"
-  #   post_type "illustration"
-  # end
+  factory :illustration, class: Post do
+    title "Pies In The Sky"
+    subtitle "inspired by a Flatiron Feeling Friday"
+    cover_art "pies-in-the-sky-cover.jpeg"
+    image "pies-in-the-sky.jpeg"
+    type "Illustration"
+  end
 end
 
 
