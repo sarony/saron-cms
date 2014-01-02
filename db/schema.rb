@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20140101095856) do
     t.string   "subtitle"
     t.string   "preview"
     t.string   "cover_art"
+    t.string   "post_type"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

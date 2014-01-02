@@ -6,6 +6,8 @@ class CreatePosts < ActiveRecord::Migration
       t.string :subtitle
       t.string :preview
       t.string :cover_art
+      t.string :post_type
+      t.string :image
       t.timestamps
     end
   end

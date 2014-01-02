@@ -6,24 +6,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def new
-    @post = Post.new
-  end
-
-  def create
-    @post = Post.new(post_params)
-    @post.save
-    redirect_to posts_path
-  end
-
   private
 
   def set_post
     Post.find_by(:id => params[:id])
-  end
-
-  def post_params
-    params.require(:post).permit(:title, :subtitle, :body, :preview, :cover_art)
   end
   
 end
