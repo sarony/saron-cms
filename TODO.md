@@ -14,7 +14,14 @@ NEED:
 MODELS:
 
 Posts:
-- attributes: title, subtitle, body, cover_art, preview, image, type
+- title, subtitle, cover_art
+
+Blog_post:
+- body
+- preview
+
+Illustration:
+- image
 
 User:
 - attribute: email, password

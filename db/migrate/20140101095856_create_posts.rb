@@ -2,12 +2,12 @@ class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
       t.string :title
-      t.string :body
       t.string :subtitle
-      t.string :preview
       t.string :cover_art
-      t.string :post_type
+      t.string :type
+      t.string :preview
       t.string :image
+      t.string :body
       t.timestamps
     end
   end

@@ -1,12 +1,13 @@
-<h1>Posts</h1>
-
 <% @posts.each do |post| %>
   <%= post.title %>
   <%= post.subtitle %>
-  <%= post.preview %>
   <%= post.cover_art %>
-  <%= link_to "Edit", post.post_type== "blog_post" ? edit_blog_post_path(post) : edit_illustration_path(post) %>
+  <% if post.type == "BlogPost" %>
+    <%= post.preview %>
+    <%= post.body %>
+  <% elsif post.type == "Illustration" %>
+    <%= post.image %>
+  <% end %>
 <% end %>
 
-<%= link_to "New Blog Post", new_blog_post_path %>
-<%= link_to "New Illustration", new_illustration_path  %>
+<a href="posts/new?post_type=BlogPost">New Blog Post</a>

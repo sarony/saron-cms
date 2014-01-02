@@ -1,0 +1,23 @@
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :subtitle %>
+  <%= f.text_field :subtitle %>
+
+  <%= f.label :cover_art %>
+  <%= f.text_field :cover_art %>
+
+  <% if @post.type == "BlogPost" %>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+
+    <%= f.label :preview %>
+    <%= f.text_field :preview %>
+
+    <%= f.hidden_field :type, value: "BlogPost" %>
+
+  <% end %>
+
+  <%= f.submit %>
+<% end %>

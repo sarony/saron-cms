@@ -1,29 +1,8 @@
 SaronCms::Application.routes.draw do
 
-  # home cms
-  get '/where-you-run-shit' => 'posts#index', :as => "home"
-
-  # posts
-  get '/posts' => 'posts#index',:as => "posts"
-
-  # blog posts
-  get '/posts/blog_posts' => 'blog_posts#index', :as => "blog_posts"
-
-  get '/posts/blog_posts/new' => 'blog_posts#new',:as => "new_blog_post"
-
-  post '/posts/blog_posts' => 'blog_posts#create'
-
-  get '/posts/blog_posts/:id' => 'blog_posts#show', :as => "blog_post"
-
-  get '/posts/blog_posts/:id/edit' => "blog_posts#edit", :as => "edit_blog_post"
-
-  patch '/posts/blog_posts/:id' => "blog_posts#update"
-
-  # illustrations
-  get '/posts/illustrations/new' => 'illustrations#new', :as => "new_illustration"
-  post '/posts/illustrations' => 'illustrations#create'
-  get '/posts/illustrations/:id' => 'illustrations#show', :as => "illustration"
-  get '/posts/illustrations/:id/edit' => 'illustrations#edit', :as => "edit_illustration"
+  get '/posts' => "posts#index", :as => "posts"
+  get '/posts/new' => "posts#new", :as => "new_post"
+  post '/posts' => "posts#create"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
