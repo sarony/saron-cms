@@ -25,4 +25,8 @@ Tasks:
 - work on cover art uploader
 - setup forms and all for basic posts
 - then worry about uploader --> Paperclip
-- 
+
+
+
+REFACTOR
+- refactor private methods

@@ -1,12 +1,11 @@
 <h1>Posts</h1>
 
-<%= @posts.each do |post| %>
+<% @posts.each do |post| %>
   <%= post.title %>
   <%= post.subtitle %>
   <%= post.preview %>
   <%= post.cover_art %>
-
 <% end %>
 
-<%= link_to "New Blog Post" %>
-<%= link_to "New Illustration" %>
+<%= link_to "New Blog Post", new_blog_post_path %>
+<%= link_to "New Illustration", new_illustration_path  %>

@@ -1,15 +1,12 @@
-<%= form_for @post, :url => "/posts/blog_posts" do |f| %>
+<%= form_for @post, :url => "/posts/illustrations" do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 
   <%= f.label :subtitle %>
   <%= f.text_field :subtitle %>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-
-  <%= f.label :preview %>
-  <%= f.text_area :preview %>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
 
   <%= f.label :cover_art %>
   <%= f.text_field :cover_art %>
