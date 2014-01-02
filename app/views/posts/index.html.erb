@@ -5,6 +5,7 @@
   <%= post.subtitle %>
   <%= post.preview %>
   <%= post.cover_art %>
+  <%= link_to "Edit", post.post_type== "blog_post" ? edit_blog_post_path(post) : edit_illustration_path(post) %>
 <% end %>
 
 <%= link_to "New Blog Post", new_blog_post_path %>

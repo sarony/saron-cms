@@ -20,11 +20,20 @@ User:
 - attribute: email, password
 
 Tasks:
-- set up Capybara stuff
-- start with the Posts model
+#- set up Capybara stuff
+#- start with the Posts model
 - work on cover art uploader
 - setup forms and all for basic posts
 - then worry about uploader --> Paperclip
+
+Features:
+#- Create blogposts
+#- Create illustrations
+- Read posts
+- Edit blog_posts
+- Edit illustrations
+- Delete blog_posts
+- Delete illustrations
 
 
 

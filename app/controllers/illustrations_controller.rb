@@ -1,20 +1,28 @@
 class IllustrationsController < ApplicationController
+  before_action :set_illustration, only: [:show, :edit, :update, :destroy]
 
   def new
-    @post = Post.new
+    @illustration = Post.new
   end
 
   def create
-    @post = Post.new(post_params)
-    @post.post_type = "illustration"
-    if @post.save
+    @illustration = Post.new(illustration_params)
+    @illustration.post_type = "illustration"
+    if @illustration.save
       redirect_to "posts"
     end
   end
 
+  def show
+  end
+
   private
 
-  def post_params
+  def set_illustration
+    @illustration = Post.find_by(:id => params[:id])
+  end
+
+  def illustration_params
     params.require(:post).permit(:title, :subtitle, :image, :cover_art)
   end
 end
