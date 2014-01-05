@@ -14,7 +14,7 @@ feature "edit blog post" do
 
   scenario "editing a blog posts' body" do
     visit posts_url
-    click_link "Edit"
+    click_button "Edit"
 
     visit edit_post_url(blog_post)
     fill_in "Body", with: "I've changed yo."
@@ -25,7 +25,7 @@ feature "edit blog post" do
 
   scenario "delete blog post" do
     visit posts_url
-    click_link "Delete"
+    click_button "Delete"
 
     visit posts_url
     expect(page).to have_no_text("Halfway")
@@ -41,7 +41,7 @@ feature "edit illustration" do
 
   scenario "editing an illustration's image" do
     visit posts_url
-    click_link "Edit"
+    click_button "Edit"
 
     visit edit_post_url(illustration)
     fill_in "Image", with: "new-image.jpeg"
