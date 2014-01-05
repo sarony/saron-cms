@@ -28,6 +28,11 @@ before_action :set_post, :only => [:show, :edit, :update, :destroy]
     redirect_to posts_path
   end
 
+  def destroy
+    @post.destroy
+    redirect_to posts_path
+  end
+
   private
 
   def set_post

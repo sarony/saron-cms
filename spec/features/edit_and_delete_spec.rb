@@ -7,6 +7,11 @@ feature "edit blog post" do
     FactoryGirl.create(:blog_post)
   end
 
+  scenario "make sure blogs show up" do
+    visit posts_url
+    expect(page).to have_text("Halfway")
+  end
+
   scenario "editing a blog posts' body" do
     visit posts_url
     click_link "Edit"
@@ -16,6 +21,14 @@ feature "edit blog post" do
 
     click_button "Update Post"
     expect(page).to have_text("I've changed yo.")
+  end
+
+  scenario "delete blog post" do
+    visit posts_url
+    click_link "Delete"
+
+    visit posts_url
+    expect(page).to have_no_text("Halfway")
   end
 end
 
