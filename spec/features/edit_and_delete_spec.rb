@@ -48,7 +48,14 @@ feature "edit illustration" do
 
     click_button "Update Post"
     expect(page).to have_text("new-image.jpeg")
+  end
 
+  scenario "delete blog post" do
+    visit posts_url
+    click_button "Delete"
+
+    visit posts_url
+    expect(page).to have_no_text("Pies In The Sky")
   end
 
 end
