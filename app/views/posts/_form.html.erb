@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+<%= form_for(@post, :html => { :multipart => true }) do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 
@@ -7,6 +7,8 @@
 
   <%= f.label :cover_art %>
   <%= f.text_field :cover_art %>
+
+  <%= f.file_field :avatar %>
 
   <% if @post.type == "BlogPost" %>
     <%= f.label :body %>

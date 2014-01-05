@@ -36,12 +36,19 @@ Tasks:
 Features:
 #- Create blogposts
 #- Create illustrations
-- Read posts
-- Edit blog_posts
-- Edit illustrations
-- Delete blog_posts
-- Delete illustrations
+#- Read posts
+#- Edit blog_posts
+#- Edit illustrations
+#- Delete blog_posts
+#- Delete illustrations
+- image uploader --> Paperclip
+- setup AWS shit
+- include text-editor with Markdown
+- include Red Carpet to render Markdown
 
+Backup (10PM):
+- redesign your SquareSpace
+- change name to www.saronyitbarek.com
 
 
 REFACTOR
