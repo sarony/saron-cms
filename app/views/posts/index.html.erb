@@ -6,6 +6,7 @@
   <%= post.cover_art %>
   <% if post.type == "BlogPost" %>
     <%= post.preview %>
+    <%#= post.body %>
     <%= raw markdown.render(post.body) %>
   <% elsif post.type == "Illustration" %>
     <%= post.image %>

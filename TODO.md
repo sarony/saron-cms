@@ -43,13 +43,18 @@ Features:
 #- Delete illustrations
 #- image uploader --> Paperclip
 #- setup AWS shit
-- include text-editor with Markdown
+#- include text-editor with Markdown
 #- include Red Carpet to render Markdown
-- syntax highlighting with Red Carpet or pygments
+#- multi-line code snippets
 
 Text Editor: Summernote Text Editor
-- bootstrap gem
-- summernote 
+#- bootstrap gem
+#- summernote 
+
+Style
+- index page
+- blog edit page
+- get routes up
 
 Backup (10PM):
 - redesign your SquareSpace
