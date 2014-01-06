@@ -41,10 +41,24 @@ Features:
 #- Edit illustrations
 #- Delete blog_posts
 #- Delete illustrations
-- image uploader --> Paperclip
-- setup AWS shit
+#- image uploader --> Paperclip
+#- setup AWS shit
 - include text-editor with Markdown
-- include Red Carpet to render Markdown
+#- include Red Carpet to render Markdown
+- syntax highlighting with Red Carpet or pygments
+
+Text Editor:
+- bold
+- italics
+- strikethrough
+- underline
+- h1
+- h2
+- subtitle
+- paragraph
+- image upload
+- link
+- indent
 
 Backup (10PM):
 - redesign your SquareSpace

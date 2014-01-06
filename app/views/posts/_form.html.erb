@@ -12,10 +12,10 @@
 
   <% if @post.type == "BlogPost" %>
     <%= f.label :body %>
-    <%= f.text_field :body %>
+    <%= f.text_area :body %>
 
     <%= f.label :preview %>
-    <%= f.text_field :preview %>
+    <%= f.text_area :preview %>
 
     <%= f.hidden_field :type, value: "BlogPost" %>
 
