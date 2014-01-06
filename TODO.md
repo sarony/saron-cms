@@ -47,18 +47,9 @@ Features:
 #- include Red Carpet to render Markdown
 - syntax highlighting with Red Carpet or pygments
 
-Text Editor:
-- bold
-- italics
-- strikethrough
-- underline
-- h1
-- h2
-- subtitle
-- paragraph
-- image upload
-- link
-- indent
+Text Editor: Summernote Text Editor
+- bootstrap gem
+- summernote 
 
 Backup (10PM):
 - redesign your SquareSpace

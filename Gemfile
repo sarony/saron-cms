@@ -11,6 +11,7 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -26,6 +27,9 @@ gem 'jquery-rails'
 gem 'redcarpet'
 
 gem "paperclip", "~> 3.0"
+
+gem 'font-awesome-sass'
+# gem 'bootstrap-sass', '~> 3.0.2.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 #gem 'turbolinks'
